@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Color</title>
+</head>
+
+<body>
+    <h1 id="color">Warna Apa yaa ?</h1>
+    <button id="generate">Ganti Warna</button>
+    <script>
+        const text = document.querySelector('#color');
+        const button = document.querySelector('#generate');
+
+        function generateNum() {
+            return Math.floor(Math.random() * 255);
+        }
+
+        function generateColor() {
+            return `rgb(${generateNum()},${generateNum()},${generateNum()})`
+        }
+
+        button.addEventListener('click', function () {
+            const newColor = generateColor();
+            text.innerText = `ini Warna : ${newColor}`;
+            document.body.style.backgroundColor = newColor;
+        })
+    </script>
+</body>
+
+</html>

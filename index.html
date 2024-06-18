@@ -1,0 +1,87 @@
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman HTML Sederhana</title>
+        <script src="app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif">
+    <header>
+        <h1>Selamat Datang di Halaman Saya</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="beranda">
+        <h2>Beranda</h2>
+        <p>Ini adalah halaman beranda. Selamat datang di situs saya. Ini adalah contoh konten untuk berlatih manipulasi DOM.</p>
+        <img src="https://via.placeholder.com/600x400" alt="Contoh Gambar">
+    </section>
+
+    <section id="tentang">
+        <h2>Tentang</h2>
+        <p>Ini adalah halaman tentang. Di sini Anda bisa menambahkan informasi tentang diri Anda atau situs Anda.</p>
+        <ul>
+            <li>Informasi 1</li>
+            <li>Informasi 2</li>
+            <li>Informasi 3</li>
+        </ul>
+        <img src="https://via.placeholder.com/400x300" alt="Gambar Tentang">
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>Ini adalah halaman kontak. Anda bisa menghubungi saya melalui form di bawah ini.</p>
+        <form>
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan"></textarea><br><br>
+            <input type="submit" value="Kirim">
+        </form>
+        <img src="https://via.placeholder.com/300x200" alt="Gambar Kontak">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Halaman Sederhana Saya</p>
+    </footer>
+</body>
+</html>
